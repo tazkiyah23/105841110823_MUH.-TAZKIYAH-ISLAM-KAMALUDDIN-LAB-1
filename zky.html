@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tugas lab</title>
+</head>
+<body>
+
+<h2>Fungsi Mengembalikan Nilai Integer</h2>
+<p id="result1"></p>
+
+<h2>Fungsi Mengembalikan Nilai Boolean</h2>
+<p id="result2"></p>
+
+<h2>Fungsi Mengembalikan Nilai String</h2>
+<p id="result3"></p>
+
+<h2>Fungsi Mengembalikan Nilai Boolean (Operator)</h2>
+<p id="result4"></p>
+
+<h2>Fungsi Mengembalikan Nilai Boolean (Operator)</h2>
+<p id="result5"></p>
+
+<script>
+    
+    function soal1(a, b) {
+        return a - b;
+    }
+
+   
+    function soal2(a, b) {
+        return a || b;
+    }
+
+   
+    function soal3(a, b) {
+        return a + " " + b;
+    }
+
+   
+    function soal4(a, b) {
+        return a == b;
+    }
+
+    
+    function soal5(a, b) {
+        return a === b;
+    }
+
+   
+    document.getElementById("result1").innerHTML = "Hasil: " + soal1(9, 6);
+    document.getElementById("result2").innerHTML = "Hasil: " + soal2(true, false);
+    document.getElementById("result3").innerHTML = "Hasil: " + soal3("MUH. TAZKIYAH", "ISLAM KAMALUDDIN");
+    document.getElementById("result4").innerHTML = "Hasil: " + soal4(8, '8');
+    document.getElementById("result5").innerHTML = "Hasil: " + soal5(9, '9');
+
+
+  // game check jodoh
+  let nilaiMahasiswa = [80, 90, 70, 85, 95];
+    nilaiMahasiswa.forEach(function (nilai) {
+        document.write(nilai + "<br>");
+    });
+
+    //Contoh kasus untuk if else
+    let nilai = 80;
+    if (nilai >= 80) {
+        document.write("Nilai kamu A<br>");
+    } else if (nilai >= 70) {
+        document.write("Nilai kamu B<br>");
+    } else if (nilai >= 60) {
+        document.write("Nilai kamu C<br>");
+    } else {
+        document.write("Nilai kamu Nol<br>");
+    }
+
+    //Geme check jodoh
+    let namaCewek = "syarifah";
+    let namaCowok = "tazkiyah";
+
+    let hasil = Math.floor(Math.random() * 71) + 30;
+    if (hasil >= 80) {
+        document.write("Selamat " + namaCewek + " dan " + namaCowok + " adalah jodoh sejati<br>");
+    } else if (hasil >= 70) {
+        document.write("Selamat " + namaCewek + " dan " + namaCowok + " adalah HTS(hubungan tanpa status ;) <br>");
+    } else if (hasil >= 60) {
+        document.write("Selamat " + namaCewek + " dan " + namaCowok + " adalah sebatas teman biasa  <br>");
+    } else {
+        document.write("Maaf " + namaCewek + " dan " + namaCowok + " tidak berjodoh<br>");
+    }
+</script>
+
+</body>
+</html>
